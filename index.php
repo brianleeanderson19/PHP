@@ -11,15 +11,15 @@
     $loggedIn = true;
 
       if ($loggedIn == true) {
-        echo "You are now logged in.";
+        echo "You are now logged in." . "<br />";
       } else {
-        echo "Please Log in..";
+        echo "Please Log in.." . "<br />";
       }
 
       $people = ["Alice", "Bob", "Catherine"]; 
 
-      print_r($people);
-      echo $people[2];
+      print_r ($people) . "<br />";
+      echo $people[2] . "<br />";
 
       foreach ($people as $person) {
           echo $person . ' ';
@@ -31,14 +31,14 @@
       foreach ($numbers as $number) {
         $sum = $sum + $number;
       }
-      echo $sum;
+      echo $sum . ' ';
       }
   ?>
 
 
 
   <form action="process.php" method="post">
-    Enter your name: <input name="name" type="text">
+    Enter your name: <input name="name" type="text"> <br>
     <input type="submit">
   </form>
 
